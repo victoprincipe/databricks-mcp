@@ -38,12 +38,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/victoprincipe/databricks-jdbc-mcp.git"
+    "url": "git+https://github.com/victoprincipe/databricks-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/victoprincipe/databricks-jdbc-mcp/issues"
+    "url": "https://github.com/victoprincipe/databricks-mcp/issues"
   },
-  "homepage": "https://github.com/victoprincipe/databricks-jdbc-mcp#readme",
+  "homepage": "https://github.com/victoprincipe/databricks-mcp#readme",
   "publishConfig": {
     "access": "public"
   },
