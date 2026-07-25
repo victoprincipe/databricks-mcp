@@ -6,6 +6,7 @@
  * and @databricks/sql for database connectivity.
  */
 
+import { fileURLToPath } from 'url';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
@@ -195,7 +196,15 @@ export async function main(): Promise<void> {
 }
 
 // Only execute main if run directly from CLI
-if (process.argv[1] && process.argv[1].endsWith('index.js')) {
+const isDirectExecution = process.argv[1] && (
+  process.argv[1].endsWith('index.js') ||
+  process.argv[1].endsWith('databricks-mcp') ||
+  process.argv[1].endsWith('databricks-db-mcp') ||
+  process.argv[1].endsWith('databricks-mcp-server') ||
+  fileURLToPath(import.meta.url) === process.argv[1]
+);
+
+if (isDirectExecution) {
   main().catch((e) => {
     console.error(`Fatal server error: ${e instanceof Error ? e.message : e}`);
     process.exit(1);
