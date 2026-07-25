@@ -1,6 +1,6 @@
 {
   "name": "databricks-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Standalone MCP (Model Context Protocol) server for Databricks SQL using @databricks/sql",
   "type": "module",
   "main": "dist/index.js",
