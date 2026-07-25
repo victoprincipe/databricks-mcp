@@ -1,0 +1,47 @@
+# Node.js
+node_modules/
+dist/
+coverage/
+.opencode/
+*.tsbuildinfo
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+
+# IDE - VS Code
+.vscode/
+
+# IDE - NetBeans
+nbactions.xml
+nb-configuration.xml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+*.env
+.env.*
+
+# MCP wrapper (gerado pelo configure.sh — contém credenciais)
+databricks-mcp.sh
+
+# Legacy Java artifacts (can be removed)
+target/
+*.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
