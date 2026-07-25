@@ -1,14 +1,14 @@
 {
-  "name": "databricks-db-mcp",
+  "name": "databricks-mcp",
   "version": "1.0.0",
   "description": "Standalone MCP (Model Context Protocol) server for Databricks SQL using @databricks/sql",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "databricks-mcp-server": "dist/index.js",
+    "databricks-mcp": "dist/index.js",
     "databricks-db-mcp": "dist/index.js",
-    "databricks-mcp": "dist/index.js"
+    "databricks-mcp-server": "dist/index.js"
   },
   "files": [
     "dist",

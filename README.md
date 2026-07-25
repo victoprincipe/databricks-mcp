@@ -1,4 +1,4 @@
-# Databricks MCP Server (`databricks-db-mcp`)
+# Databricks MCP Server (`databricks-mcp`)
 
 A standalone MCP (Model Context Protocol) server that connects to Databricks using the native `@databricks/sql` Node.js driver. Built with TypeScript and the official `@modelcontextprotocol/sdk`.
 
@@ -18,7 +18,7 @@ Exposes four MCP tools over `stdio`:
 You can run this MCP server directly using `npx` in any MCP client:
 
 ```bash
-npx -y databricks-db-mcp
+npx -y databricks-mcp
 ```
 
 ---
@@ -46,7 +46,7 @@ Add the following to your MCP settings file (`~/.gemini/antigravity-ide/mcp.json
   "mcpServers": {
     "databricks-db": {
       "command": "npx",
-      "args": ["-y", "databricks-db-mcp"],
+      "args": ["-y", "databricks-mcp"],
       "env": {
         "DATABRICKS_HOST": "adb-123456789.12.azuredatabricks.net",
         "DATABRICKS_TOKEN": "dapi...",
@@ -65,7 +65,7 @@ Add the following to your MCP settings file (`~/.gemini/antigravity-ide/mcp.json
   "mcpServers": {
     "databricks-db": {
       "command": "npx",
-      "args": ["-y", "databricks-db-mcp"],
+      "args": ["-y", "databricks-mcp"],
       "env": {
         "DATABRICKS_HOST": "adb-123456789.12.azuredatabricks.net",
         "DATABRICKS_TOKEN": "dapi...",
@@ -85,7 +85,7 @@ Add to `~/.config/opencode/opencode.json`:
   "mcp": {
     "databricks-db": {
       "type": "local",
-      "command": ["npx", "-y", "databricks-db-mcp"],
+      "command": ["npx", "-y", "databricks-mcp"],
       "environment": {
         "DATABRICKS_HOST": "adb-123456789.12.azuredatabricks.net",
         "DATABRICKS_TOKEN": "dapi...",
@@ -107,7 +107,7 @@ Add to `.cursor/mcp.json` or your editor's MCP configuration:
   "mcpServers": {
     "databricks-db": {
       "command": "npx",
-      "args": ["-y", "databricks-db-mcp"],
+      "args": ["-y", "databricks-mcp"],
       "env": {
         "DATABRICKS_HOST": "adb-123456789.12.azuredatabricks.net",
         "DATABRICKS_TOKEN": "dapi...",

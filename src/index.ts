@@ -62,7 +62,7 @@ export function createMcpServer(
   capabilities: { isDatabricks: () => boolean },
 ): McpServer {
   const server = new McpServer({
-    name: 'databricks-mcp-server',
+    name: 'databricks-mcp',
     version: '1.0.0',
   });
 
